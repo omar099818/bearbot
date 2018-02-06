@@ -34,7 +34,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === 'b*help') {
+if (message.content === 'b*help') {    return message.reply('**Check your DM | ✅**'); 
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
 .addField("**:globe_with_meridians:[BearBot 🐻]**","** **")
